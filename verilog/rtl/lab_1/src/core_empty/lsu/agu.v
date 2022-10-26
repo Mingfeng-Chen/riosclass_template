@@ -5,7 +5,7 @@
 /////////////////////////
 `ifndef AGU_V
 `define AGU_V
-`include "../params.vh"
+`include "params.vh"
 /*verilator lint_off UNUSED */
 module agu (
 
