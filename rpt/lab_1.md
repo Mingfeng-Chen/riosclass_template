@@ -24,3 +24,4 @@ a.GreenRio core logic synthesis by yosys (use 2 libs as different conrer)
 
 <img width="490" alt="1666686820669" src="https://user-images.githubusercontent.com/59349853/198014990-49e89d20-b921-4607-9d97-118a19cd6eab.png">
 
+See riosclass_template/openlane for synthesis documents.
