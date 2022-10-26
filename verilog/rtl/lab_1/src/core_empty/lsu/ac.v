@@ -5,7 +5,7 @@
 /////////////////////////
 `ifndef AC_V
 `define AC_V
-`include "../params.vh"
+`include "params.vh"
 /* verilator lint_off UNUSED */
 module ac (
     input valid_i,
