@@ -1,6 +1,6 @@
 `ifndef BUS_ARBITER_V
 `define BUS_ARBITER_V
-`include "./params.vh"
+`include "params.vh"
 module bus_arbiter(
 `ifdef USE_POWER_PINS
     inout vccd1,       // User area 1 1.8V supply
