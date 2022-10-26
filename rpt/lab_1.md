@@ -7,9 +7,7 @@ a.Spike model (with risc-v pk) execution correctness: simulate programs atop the
 b.GreenRio core RTL execution correctness: pass some ISA tests (Synopsys VCS environment)
 <img width="637" alt="1666343708007" src="https://user-images.githubusercontent.com/59349853/197389763-9041b30a-5819-4ea0-8f36-18376968a7d5.png">
 <img width="639" alt="1666343751670" src="https://user-images.githubusercontent.com/59349853/197389795-1a07ac0f-86ec-4980-8afa-8fb999ce4ad8.png">
-![微信图片_20221026191952](https://user-images.githubusercontent.com/59349853/198014151-153ce7cd-8b2d-4c05-aa2d-f94be0db3633.png)
-
-
+<img width="639" alt="1666343751671" src="https://user-images.githubusercontent.com/59349853/198014151-153ce7cd-8b2d-4c05-aa2d-f94be0db3633.png"
 
 c.Spike model + GreenRio RTL co-simulation system. 
 
@@ -22,9 +20,7 @@ ii.You need to have GreenRio run the risc-v elf in an RTL simulation environment
 
 2.Open EDA flow. 
 a.GreenRio core logic synthesis by yosys (use 2 libs as different conrer)   
+<img width="490" alt="1666686820669" src="https://user-images.githubusercontent.com/59349853/198014979-e39b5746-b1a1-49f3-910e-39e4aaccd07c.png">
 
-<img width="544" alt="1666535407668" src="https://user-images.githubusercontent.com/59349853/197725915-1a169ddb-9c76-4e05-88f7-d79b336d235b.png">
+<img width="490" alt="1666686820669" src="https://user-images.githubusercontent.com/59349853/198014990-49e89d20-b921-4607-9d97-118a19cd6eab.png">
 
-<img width="603" alt="1666451014523" src="https://user-images.githubusercontent.com/59349853/197389872-68a8355f-eb60-442e-885c-57eca490fa4f.png">
-<img width="604" alt="1666535559251" src="https://user-images.githubusercontent.com/59349853/197725941-6b20ff90-cfcd-4af3-a33d-9fa9c90135db.png">
-<img width="627" alt="1666535621490" src="https://user-images.githubusercontent.com/59349853/197725966-5b1094fc-4f14-418b-8e08-cdca0eafaae4.png">
