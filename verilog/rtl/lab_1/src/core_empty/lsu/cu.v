@@ -5,7 +5,7 @@
 /////////////////////////
 `ifndef CU_V
 `define CU_V
-`include "../params.vh"
+`include "params.vh"
 module cu (
     input clk,
     input rstn,
