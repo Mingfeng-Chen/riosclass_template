@@ -7,7 +7,10 @@ a.Spike model (with risc-v pk) execution correctness: simulate programs atop the
 b.GreenRio core RTL execution correctness: pass some ISA tests (Synopsys VCS environment)
 <img width="637" alt="1666343708007" src="https://user-images.githubusercontent.com/59349853/197389763-9041b30a-5819-4ea0-8f36-18376968a7d5.png">
 <img width="639" alt="1666343751670" src="https://user-images.githubusercontent.com/59349853/197389795-1a07ac0f-86ec-4980-8afa-8fb999ce4ad8.png">
-<img width="625" alt="1666343856640" src="https://user-images.githubusercontent.com/59349853/197389817-31f9b1af-5493-42e4-9e9a-b28afb52b2f8.png">
+![微信图片_20221026191952](https://user-images.githubusercontent.com/59349853/198014151-153ce7cd-8b2d-4c05-aa2d-f94be0db3633.png)
+
+
+
 c.Spike model + GreenRio RTL co-simulation system. 
 
 i.You need to run the elf file on the spike emulator and print the log
