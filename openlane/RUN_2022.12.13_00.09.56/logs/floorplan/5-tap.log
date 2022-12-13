@@ -1,0 +1,7 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO TAP-0004] Inserted 1394 endcaps.
+[INFO TAP-0005] Inserted 51726 tapcells.
+Writing OpenROAD database to /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/floorplan/hehe.odb...
+Writing layout to /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/floorplan/hehe.def...

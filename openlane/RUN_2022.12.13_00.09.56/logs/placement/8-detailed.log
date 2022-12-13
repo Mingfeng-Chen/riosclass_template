@@ -1,0 +1,21 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Placement Analysis
+---------------------------------
+total displacement     138551.1 u
+average displacement        1.3 u
+max displacement           13.1 u
+original HPWL         3187388.6 u
+legalized HPWL        3307984.2 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 16946 instances
+[INFO DPL-0021] HPWL before          3307984.2 u
+[INFO DPL-0022] HPWL after           3274574.3 u
+[INFO DPL-0023] HPWL delta               -1.0 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/placement/hehe.odb...
+Writing netlist to /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/placement/hehe.nl.v...
+Writing powered netlist to /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/placement/hehe.pnl.v...
+Writing layout to /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/placement/hehe.def...

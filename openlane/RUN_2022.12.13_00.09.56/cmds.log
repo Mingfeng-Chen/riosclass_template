@@ -1,0 +1,140 @@
+Tue Dec 13 00:09:57 UTC 2022 - Executing "openroad -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/layers.list /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Tue Dec 13 00:09:57 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef -i /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Tue Dec 13 00:09:57 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.min.lef -i /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Tue Dec 13 00:09:58 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.max.lef -i /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Tue Dec 13 00:09:58 UTC 2022 - Executing "python3 /openlane/scripts/mergeLib.py --output /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/merged.lib --name sky130A_merged /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Dec 13 00:09:58 UTC 2022 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/trimmed.lib /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/merged.lib"
+
+Tue Dec 13 00:09:59 UTC 2022 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/cts/cts.lib.exclude.list --output /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/cts/cts.lib /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Tue Dec 13 00:09:59 UTC 2022 - Executing "python3 /openlane/scripts/new_tracks.py -i /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/routing/config.tracks"
+
+Tue Dec 13 00:09:59 UTC 2022 - Executing "echo {OpenLane e3a5189a1b0fc4290686fcf2ae46cd6d7947cf9f} > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/OPENLANE_VERSION"
+
+Tue Dec 13 00:10:00 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Tue Dec 13 00:10:00 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/trimmed.lib > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Tue Dec 13 00:10:00 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Tue Dec 13 00:19:35 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/results\/synthesis\/hehe.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 00:19:35 UTC 2022 - Executing "sed -i /defparam/d /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/synthesis/hehe.v"
+
+Tue Dec 13 00:19:36 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/synthesis/2-sta.log"
+
+Tue Dec 13 00:20:00 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/2-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Tue Dec 13 00:20:00 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/trimmed.lib > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/2-trimmed.no_pg.lib"
+
+Tue Dec 13 00:20:00 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /dev/null |& tee /dev/null"
+
+Tue Dec 13 00:27:49 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/floorplan/3-initial_fp.log"
+
+Tue Dec 13 00:27:51 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/floorplan/3-initial_fp.log"
+
+Tue Dec 13 00:27:53 UTC 2022 - Executing "openroad -python /openlane/scripts/odbpy/defutil.py extract_core_dims --output-data /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/dimensions.txt --input-lef /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/floorplan/3-initial_fp.def"
+
+Tue Dec 13 00:27:54 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/floorplan/4-io.log"
+
+Tue Dec 13 00:27:56 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/floorplan/5-tap.log"
+
+Tue Dec 13 00:27:58 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/floorplan/6-pdn.log"
+
+Tue Dec 13 00:28:03 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/placement/7-global.log"
+
+Tue Dec 13 00:32:49 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/placement/8-detailed.log"
+
+Tue Dec 13 00:32:55 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/results\/placement\/hehe.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 00:32:55 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_routing_timing.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/9-resizer.log"
+
+Tue Dec 13 00:48:12 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/tmp\/9-hehe.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 00:48:12 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/10-diode_legalization.log"
+
+Tue Dec 13 00:48:18 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/tmp\/routing\/diode.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 00:48:18 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/11-global.log"
+
+Tue Dec 13 00:52:02 UTC 2022 - Executing "openroad -python /openlane/scripts/odbpy/defutil.py replace_instance_prefixes --original-prefix ANTENNA --new-prefix INSDIODE1 --input-lef /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef --output-def /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/routing/diode.def --output /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/routing/diode.odb /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/routing/diode.odb |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/11-antenna_diodes_1.log"
+
+Tue Dec 13 00:52:04 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/11-antenna_route_1.log"
+
+Tue Dec 13 00:55:54 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_views.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/11-global_write_netlist.log"
+
+Tue Dec 13 00:55:56 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/tmp\/routing\/global.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 00:55:57 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/13-fill.log"
+
+Tue Dec 13 00:56:09 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/tmp\/routing\/13-fill.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 00:56:09 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/droute.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/routing/14-detailed.log"
+
+Tue Dec 13 03:14:46 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/results\/routing\/hehe.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 03:14:46 UTC 2022 - Executing "openroad -python /openlane/scripts/drc_rosetta.py tr to_klayout -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/routing/drt.klayout.xml --design-name hehe /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/routing/drt.drc"
+
+Tue Dec 13 03:14:46 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/15-parasitics_extraction.min.log"
+
+Tue Dec 13 03:15:58 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/16-rcx_mcsta.min.log"
+
+Tue Dec 13 03:35:43 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/17-parasitics_extraction.max.log"
+
+Tue Dec 13 03:36:54 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/18-rcx_mcsta.max.log"
+
+Tue Dec 13 03:56:53 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/rcx.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/19-parasitics_extraction.nom.log"
+
+Tue Dec 13 03:57:52 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/20-rcx_mcsta.nom.log"
+
+Tue Dec 13 04:14:09 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/21-rcx_sta.log"
+
+Tue Dec 13 04:16:56 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/irdrop.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/22-irdrop.log"
+
+Tue Dec 13 04:17:18 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/mag_gds.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/23-gdsii.log"
+
+Tue Dec 13 04:20:04 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/gds_pointers.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/23-gds_ptrs.log"
+
+Tue Dec 13 04:21:49 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/signoff/gds_ptrs.mag"
+
+Tue Dec 13 04:21:50 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/lef.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/23-lef.log"
+
+Tue Dec 13 04:27:49 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/maglef.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/23-maglef.log"
+
+Tue Dec 13 04:27:50 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/extract_spice.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/24-spice.log"
+
+Tue Dec 13 04:37:51 UTC 2022 - Executing "openroad -python /openlane/scripts/odbpy/power_utils.py write_powered_def --output /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/signoff/24-hehe.p.def --input-lef /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef --power-port vccd1 --ground-port vssd1 --powered-netlist /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/pg_define.v /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/routing/hehe.def |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/25-write_powered_def.log"
+
+Tue Dec 13 04:38:13 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_views.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/25-write_powered_verilog.log"
+
+Tue Dec 13 04:38:23 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/hehe\/runs\/RUN_2022.12.13_00.09.56\/tmp\/signoff\/24-hehe.nl.v/} /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/config.tcl"
+
+Tue Dec 13 04:38:23 UTC 2022 - Executing "netgen -batch source /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/signoff/27-setup_file.lef.lvs |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/27-lvs.lef.log"
+
+Tue Dec 13 05:23:44 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/magic/sky130A.magicrc < /openlane/scripts/magic/drc.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/28-drc.log"
+
+Tue Dec 13 05:52:34 UTC 2022 - Executing "python3 /openlane/scripts/drc_rosetta.py magic to_tcl -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.tcl /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.rpt"
+
+Tue Dec 13 05:52:34 UTC 2022 - Executing "python3 /openlane/scripts/drc_rosetta.py magic to_tr -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.tr /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.rpt"
+
+Tue Dec 13 05:52:34 UTC 2022 - Executing "python3 /openlane/scripts/drc_rosetta.py tr to_klayout -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.klayout.xml --design-name hehe /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.tr"
+
+Tue Dec 13 05:52:34 UTC 2022 - Executing "python3 /openlane/scripts/drc_rosetta.py magic to_rdb -o /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.rdb /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/drc.rpt"
+
+Tue Dec 13 05:52:35 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/antenna_check.tcl |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/29-antenna.log"
+
+Tue Dec 13 06:21:44 UTC 2022 - Executing "python3 /openlane/scripts/extract_antenna_violators.py --output /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/signoff/29-antenna_violators.rpt /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/29-antenna.log"
+
+Tue Dec 13 06:21:44 UTC 2022 - Executing "awk -v vdd=vccd1 -v gnd=vssd1 -f /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/openlane/cvc/power.awk /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/signoff/24-hehe.nl.v > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/signoff/hehe.power"
+
+Tue Dec 13 06:21:45 UTC 2022 - Executing "awk -f /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/openlane/cvc/cdl.awk /work/stu/mfchen/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/signoff/hehe.lef.spice > /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/signoff/hehe.cdl"
+
+Tue Dec 13 06:21:45 UTC 2022 - Executing "cvc /work/stu/mfchen/openlane/pdks/sky130A/libs.tech/openlane/cvc/cvcrc |& tee /dev/null /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/logs/signoff/30-erc_screen.log"
+
+Tue Dec 13 06:21:55 UTC 2022 - Executing "python3 /openlane/scripts/generate_reports.py -d /openlane/designs/hehe --design_name hehe --tag RUN_2022.12.13_00.09.56 --output_file /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/metrics.csv --man_report /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/reports/manufacturability.rpt --run_path /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56"
+
