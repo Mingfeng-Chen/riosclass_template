@@ -1,6 +1,20 @@
 1.C model for original GreenRio frontend  
-See code in rioclass_template/cmodel.
+See code in rioclass_template/cmodel.  
+```
+    memory=LoadHex(hex_path)
+    processor=new Processor;
+    bus=new Bus;
+    Simulation sim;
+    sim.SetBus(bus);
+    sim.SetMemory(memory);
+    sim.SetProcessor(processor);
+    sim.Init();
+    for(int i=0;i<maxCycle;i++){
+        sim.Tick();
+    }
+```  
 
+ 
 First, load hex files to memory.  
 In fetch stage, Instructions are fetched from Icache and pushed into a FIFO queue.  
 In decode stage, it pulls instructions out of the instruction buffer and generates the appropriate micro-op to place into the pipeline.  
