@@ -1,0 +1,140 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/routing/hehe.def
+[INFO ODB-0128] Design: hehe
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0130]     Created 207 pins.
+[INFO ODB-0131]     Created 419941 components and 1776594 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1576312 connections.
+[INFO ODB-0133]     Created 55805 nets and 200258 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/results/routing/hehe.def
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+warning: `//.tclsh-history' is not writable.
+[?1034hopenroad> 
+openroad>         read_lef /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/t mp/merged.nom.lef
+[INFO ODB-0222] Reading LEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef
+openroad>         read_verilog /openlane/designs/hehe/runs/RUN_2022.12.13_00.09. 56/tmp/synthesis/pg_define.v
+openroad>         link_design hehe
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and2b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nor2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__xnor2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__buf_1 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and4_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nand4b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__xor2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nand2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__inv_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or2b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a21o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a211o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a311o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a32oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a31oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a31o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__mux2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a221o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o21a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o221a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a21oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__mux4_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o311a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or3b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or3_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and4b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and4bb_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a41o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o21ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and3_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and2_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a2bb2o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a22o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or4_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o221ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o22a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nor4_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o211a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nand3_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o32a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nand2b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or4b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o2bb2a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a2111o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nor3_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a21boi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__or4bb_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a22oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o21ba_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o211ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o2111ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__and3b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a32o_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a21bo_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__mux2_1 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a311oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a211oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o311ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o31a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nand3b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o21bai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o22ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o2111a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a221oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o41a_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nor3b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__o31ai_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nor4b_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__a2111oi_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__nand4_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__dfxtp_2 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__dlxtn_1 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__conb_1 has no liberty cell.
+[WARNING ORD-1011] LEF master sky130_fd_sc_hd__buf_2 has no liberty cell.
+openroad>         write_def /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/ tmp/synthesis/pg_define.intermediate.def
+openroad>         exit
+unable to write history to `//.tclsh-history'
+
+[INFO ODB-0222] Reading LEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/pg_define.intermediate.def
+[INFO ODB-0128] Design: hehe
+[INFO ODB-0130]     Created 207 pins.
+[INFO ODB-0131]     Created 51971 components and 396456 component-terminals.
+[INFO ODB-0133]     Created 52046 nets and 188548 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/hehe/runs/RUN_2022.12.13_00.09.56/tmp/synthesis/pg_define.intermediate.def
+Top-level design name: hehe
+Found default power net 'vccd1'
+Found default ground net 'vssd1'
+Found 1 power ports.
+Found 1 ground ports.
+Modified power connections of 419941/419941 cells.
